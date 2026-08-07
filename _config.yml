@@ -1,0 +1,29 @@
+# DIPHIL WORLD – Jekyll site for GitHub Pages
+title: DIPHIL WORLD
+description: >-
+  Professional Datalink Operator & Technician services.
+  Link 11, Link 16, secure tactical data links for aircraft, ships, UAVs and ground forces.
+url: "" # set to https://YOUR_USERNAME.github.io when deploying
+baseurl: "" # set to /REPO_NAME if project site (not user/org site)
+
+# Prefer modern markdown
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude build artifacts
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - .gitignore
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: null

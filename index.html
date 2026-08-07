@@ -1,0 +1,457 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DIPHIL WORLD | Tactical Datalink & Secure Communications</title>
+  <meta name="description" content="DIPHIL WORLD – Professional Datalink Operator & Technician services. Link 11, Link 16, secure tactical data links for aircraft, ships, UAVs and ground forces." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0ea5e9',
+            accent: '#22d3ee',
+            dark: '#060b14',
+            card: '#0d1526',
+            surface: '#111c30',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-dark text-gray-100 font-sans antialiased">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-dark/95 backdrop-blur-xl border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="{{ '/' | relative_url }}" class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg shadow-sky-500/20">
+            <i class="fas fa-satellite-dish text-white text-sm"></i>
+          </div>
+          <span class="font-bold text-lg tracking-tight">DIPHIL <span class="text-primary">WORLD</span></span>
+        </a>
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="{{ '/' | relative_url }}" class="text-primary">Home</a>
+          <a href="{{ '/explore.html' | relative_url }}" class="hover:text-primary transition">Explore</a>
+          <a href="{{ '/profile.html' | relative_url }}" class="hover:text-primary transition">Profile</a>
+          <a href="{{ '/history.html' | relative_url }}" class="hover:text-primary transition">History</a>
+          <a href="https://wa.me/2348119714460?text=Hello%20DIPHIL%20WORLD%2C%20I%20would%20like%20to%20book%20a%20service%20/%20schedule%20a%20briefing." target="_blank" rel="noopener"
+             class="bg-primary hover:bg-sky-500 text-white px-4 py-2 rounded-lg transition font-semibold shadow-lg shadow-sky-500/25">
+            Book a Call
+          </a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-card border-t border-white/5">
+      <div class="px-4 py-3 space-y-2">
+        <a href="{{ '/' | relative_url }}" class="block py-2 text-primary">Home</a>
+        <a href="{{ '/explore.html' | relative_url }}" class="block py-2 hover:text-primary">Explore</a>
+        <a href="{{ '/profile.html' | relative_url }}" class="block py-2 hover:text-primary">Profile</a>
+        <a href="{{ '/history.html' | relative_url }}" class="block py-2 hover:text-primary">History</a>
+        <a href="https://wa.me/2348119714460?text=Hello%20DIPHIL%20WORLD%2C%20I%20would%20like%20to%20book%20a%20service%20/%20schedule%20a%20briefing." target="_blank" rel="noopener"
+           class="block py-2 bg-primary text-white text-center rounded-lg font-semibold">Book a Call</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative pt-24 pb-16 overflow-hidden">
+    <div class="absolute inset-0">
+      <img loading="lazy" src="{{ '/assets/images/aircraft-hero.jpg' | relative_url }}" alt="Military aircraft" class="w-full h-full object-cover opacity-25" />
+      <div class="absolute inset-0 bg-gradient-to-r from-dark via-dark/95 to-dark/80"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-dark/60"></div>
+    </div>
+    
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 bg-sky-950/80 border border-sky-700/40 text-sky-300 text-xs font-medium px-3 py-1.5 rounded-full mb-6 backdrop-blur">
+            <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+            Tactical Data Link Specialists
+          </div>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            Secure Real-Time<br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Mission Communications</span>
+          </h1>
+          <p class="text-lg text-gray-300 mb-8 max-w-lg leading-relaxed">
+            Expert Datalink Operator & Technician services for aircraft, UAVs, ships and ground forces. We operate, monitor, maintain and troubleshoot tactical data link systems so your teams stay connected when it matters most.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="https://wa.me/2348119714460?text=Hello%20DIPHIL%20WORLD%2C%20I%20would%20like%20to%20book%20a%20service%20/%20schedule%20a%20briefing." target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 bg-primary hover:bg-sky-500 text-white font-semibold px-6 py-3.5 rounded-xl transition shadow-lg shadow-sky-500/30">
+              <i class="fab fa-whatsapp text-lg"></i>
+              Book a Call / Schedule Briefing
+            </a>
+            <a href="https://wa.me/2348119714460" target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 border border-green-600/60 hover:bg-green-600/20 text-green-400 font-medium px-6 py-3.5 rounded-xl transition">
+              <i class="fas fa-phone-alt"></i>
+              WhatsApp Call
+            </a>
+          </div>
+        </div>
+        <div class="relative hidden lg:block">
+          <div class="bg-card/90 backdrop-blur border border-white/10 rounded-2xl p-6 shadow-2xl">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-3 h-3 rounded-full bg-red-500"></div>
+              <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+              <div class="w-3 h-3 rounded-full bg-green-500"></div>
+              <span class="text-xs text-gray-500 ml-2">Live Network Status</span>
+            </div>
+            <div class="space-y-3 font-mono text-sm">
+              <div class="flex justify-between text-green-400"><span>Link 16 Network</span><span>ONLINE</span></div>
+              <div class="flex justify-between text-green-400"><span>Link 11 HF/UHF</span><span>ONLINE</span></div>
+              <div class="flex justify-between text-sky-400"><span>COMSEC Keys</span><span>SYNCED</span></div>
+              <div class="flex justify-between text-gray-400"><span>Active Nodes</span><span>47</span></div>
+              <div class="h-px bg-white/10 my-2"></div>
+              <div class="text-xs text-gray-500">Latency: 12ms · Encryption: AES-256 · Uptime 99.97%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Strip -->
+  <section class="py-4 overflow-hidden border-y border-white/5">
+    <div class="flex gap-4 px-4">
+      <img loading="lazy" src="{{ '/assets/images/aircraft-hero.jpg' | relative_url }}" alt="Fighter jet" class="h-28 w-48 object-cover rounded-xl opacity-80 flex-shrink-0" />
+      <img loading="lazy" src="{{ '/assets/images/naval.jpg' | relative_url }}" alt="Naval ship" class="h-28 w-48 object-cover rounded-xl opacity-80 flex-shrink-0" />
+      <img loading="lazy" src="{{ '/assets/images/electronics.jpg' | relative_url }}" alt="Control systems" class="h-28 w-48 object-cover rounded-xl opacity-80 flex-shrink-0" />
+      <img loading="lazy" src="{{ '/assets/images/uav.jpg' | relative_url }}" alt="UAV drone" class="h-28 w-48 object-cover rounded-xl opacity-80 flex-shrink-0" />
+      <img loading="lazy" src="{{ '/assets/images/secure-systems.jpg' | relative_url }}" alt="Radar systems" class="h-28 w-48 object-cover rounded-xl opacity-80 flex-shrink-0" />
+      <img loading="lazy" src="{{ '/assets/images/joint-ops.jpg' | relative_url }}" alt="Military vessel" class="h-28 w-48 object-cover rounded-xl opacity-80 flex-shrink-0" />
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">Our Core Services</h2>
+        <p class="text-gray-400 max-w-2xl mx-auto">End-to-end tactical datalink and secure communications support for defence, aerospace and critical operations teams.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-card border border-white/5 rounded-2xl overflow-hidden hover:border-primary/40 transition group">
+          <div class="h-36 overflow-hidden">
+            <img loading="lazy" src="{{ '/assets/images/aircraft-hero.jpg' | relative_url }}" alt="Aircraft datalink" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+          </div>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold mb-2">Tactical Data Link Operations</h3>
+            <p class="text-gray-400 text-sm mb-4 leading-relaxed">Operate and manage Link 11 and Link 16 systems for secure, real-time exchange of mission data between aircraft, UAVs, ships and ground forces.</p>
+            <a href="https://wa.me/2348119714460?text=Hello%20DIPHIL%20WORLD%2C%20I%20am%20interested%20in%20Tactical%20Data%20Link%20Operations%20service." target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-accent">
+              <i class="fab fa-whatsapp"></i> Book this service
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-card border border-white/5 rounded-2xl overflow-hidden hover:border-primary/40 transition group">
+          <div class="h-36 overflow-hidden">
+            <img loading="lazy" src="{{ '/assets/images/naval.jpg' | relative_url }}" alt="Naval communications" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+          </div>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold mb-2">Network Configuration & Monitoring</h3>
+            <p class="text-gray-400 text-sm mb-4 leading-relaxed">Design, configure and continuously monitor tactical communication networks to maintain high availability and low latency under operational pressure.</p>
+            <a href="https://wa.me/2348119714460?text=Hello%20DIPHIL%20WORLD%2C%20I%20am%20interested%20in%20Network%20Configuration%20%26%20Monitoring%20service." target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-accent">
+              <i class="fab fa-whatsapp"></i> Book this service
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-card border border-white/5 rounded-2xl overflow-hidden hover:border-primary/40 transition group">
+          <div class="h-36 overflow-hidden">
+            <img loading="lazy" src="{{ '/assets/images/electronics.jpg' | relative_url }}" alt="Technical equipment" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+          </div>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold mb-2">Equipment Install, Test & Maintenance</h3>
+            <p class="text-gray-400 text-sm mb-4 leading-relaxed">Professional installation, rigorous testing and preventive maintenance of datalink hardware and associated electronics.</p>
+            <a href="https://wa.me/2348119714460?text=Hello%20DIPHIL%20WORLD%2C%20I%20am%20interested%20in%20Equipment%20Install%2C%20Test%20%26%20Maintenance%20service." target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-accent">
+              <i class="fab fa-whatsapp"></i> Book this service
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-card border border-white/5 rounded-2xl overflow-hidden hover:border-primary/40 transition group">
+          <div class="h-36 overflow-hidden">
+            <img loading="lazy" src="{{ '/assets/images/uav.jpg' | relative_url }}" alt="UAV operations" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+          </div>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold mb-2">Fault Diagnosis & Repair</h3>
+            <p class="text-gray-400 text-sm mb-4 leading-relaxed">Rapid troubleshooting and repair of communication faults to restore mission-critical links with minimal downtime.</p>
+            <a href="https://wa.me/2348119714460?text=Hello%20DIPHIL%20WORLD%2C%20I%20am%20interested%20in%20Fault%20Diagnosis%20%26%20Repair%20service." target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-accent">
+              <i class="fab fa-whatsapp"></i> Book this service
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-card border border-white/5 rounded-2xl overflow-hidden hover:border-primary/40 transition group">
+          <div class="h-36 overflow-hidden">
+            <img loading="lazy" src="{{ '/assets/images/secure-systems.jpg' | relative_url }}" alt="Secure systems" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+          </div>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold mb-2">COMSEC & Secure Transmission</h3>
+            <p class="text-gray-400 text-sm mb-4 leading-relaxed">Ensure cryptographic security of all mission data. Full COMSEC handling, key management and secure transmission protocols.</p>
+            <a href="https://wa.me/2348119714460?text=Hello%20DIPHIL%20WORLD%2C%20I%20am%20interested%20in%20COMSEC%20%26%20Secure%20Transmission%20service." target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-accent">
+              <i class="fab fa-whatsapp"></i> Book this service
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-card border border-white/5 rounded-2xl overflow-hidden hover:border-primary/40 transition group">
+          <div class="h-36 overflow-hidden">
+            <img loading="lazy" src="{{ '/assets/images/joint-ops.jpg' | relative_url }}" alt="Joint operations" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+          </div>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold mb-2">Multi-Platform Coordination</h3>
+            <p class="text-gray-400 text-sm mb-4 leading-relaxed">Coordinate seamless communications between command centres, aircraft, surface vessels and ground units in joint operations.</p>
+            <a href="https://wa.me/2348119714460?text=Hello%20DIPHIL%20WORLD%2C%20I%20am%20interested%20in%20Multi-Platform%20Coordination%20service." target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-accent">
+              <i class="fab fa-whatsapp"></i> Book this service
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-card border border-white/5 rounded-2xl overflow-hidden hover:border-primary/40 transition group">
+          <div class="h-36 overflow-hidden">
+            <img loading="lazy" src="{{ '/assets/images/tech-report.jpg' | relative_url }}" alt="Technical reporting" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+          </div>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold mb-2">Technical Logging & Reporting</h3>
+            <p class="text-gray-400 text-sm mb-4 leading-relaxed">Accurate technical logs, operational reports and after-action documentation for compliance and continuous improvement.</p>
+            <a href="https://wa.me/2348119714460?text=Hello%20DIPHIL%20WORLD%2C%20I%20am%20interested%20in%20Technical%20Logging%20%26%20Reporting%20service." target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-accent">
+              <i class="fab fa-whatsapp"></i> Book this service
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-card border border-white/5 rounded-2xl overflow-hidden hover:border-primary/40 transition group">
+          <div class="h-36 overflow-hidden">
+            <img loading="lazy" src="{{ '/assets/images/satellite.jpg' | relative_url }}" alt="Satellite communications" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+          </div>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold mb-2">Radio & Satellite Communications</h3>
+            <p class="text-gray-400 text-sm mb-4 leading-relaxed">Expert support for HF/VHF/UHF radio systems and satellite communication links that complement tactical data networks.</p>
+            <a href="https://wa.me/2348119714460?text=Hello%20DIPHIL%20WORLD%2C%20I%20am%20interested%20in%20Radio%20%26%20Satellite%20Communications%20service." target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-accent">
+              <i class="fab fa-whatsapp"></i> Book this service
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-card border border-white/5 rounded-2xl overflow-hidden hover:border-primary/40 transition group">
+          <div class="h-36 overflow-hidden">
+            <img loading="lazy" src="{{ '/assets/images/troubleshooting.jpg' | relative_url }}" alt="Electronics troubleshooting" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+          </div>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold mb-2">Electronics Troubleshooting</h3>
+            <p class="text-gray-400 text-sm mb-4 leading-relaxed">Deep electronics diagnostics for datalink terminals, antennas, power systems and associated mission-critical hardware.</p>
+            <a href="https://wa.me/2348119714460?text=Hello%20DIPHIL%20WORLD%2C%20I%20am%20interested%20in%20Electronics%20Troubleshooting%20service." target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-accent">
+              <i class="fab fa-whatsapp"></i> Book this service
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trends Slider -->
+  <section class="py-20 bg-surface/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between mb-10">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-bold mb-2">Recent Trends</h2>
+          <p class="text-gray-400">ICT · Electronics · Mechanics in Tactical Systems</p>
+        </div>
+        <div class="hidden sm:flex gap-2">
+          <button id="trend-prev" class="w-10 h-10 rounded-full border border-white/10 hover:border-primary flex items-center justify-center transition">
+            <i class="fas fa-chevron-left text-sm"></i>
+          </button>
+          <button id="trend-next" class="w-10 h-10 rounded-full border border-white/10 hover:border-primary flex items-center justify-center transition">
+            <i class="fas fa-chevron-right text-sm"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="relative overflow-hidden">
+        <div id="trends-track" class="flex gap-6 transition-transform duration-500 ease-out">
+          <div class="trend-slide min-w-full sm:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] bg-card border border-white/5 rounded-2xl p-6">
+            <div class="text-xs font-semibold text-primary uppercase tracking-wider mb-3">ICT</div>
+            <h3 class="text-lg font-semibold mb-2">Software-Defined Radios (SDR)</h3>
+            <p class="text-gray-400 text-sm">Modern forces are rapidly adopting SDRs for flexible waveform support, enabling seamless switching between Link 16, Link 22 and national waveforms.</p>
+          </div>
+          <div class="trend-slide min-w-full sm:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] bg-card border border-white/5 rounded-2xl p-6">
+            <div class="text-xs font-semibold text-accent uppercase tracking-wider mb-3">Electronics</div>
+            <h3 class="text-lg font-semibold mb-2">Miniaturised Multi-Band Antennas</h3>
+            <p class="text-gray-400 text-sm">New multi-band antenna designs reduce platform signature while supporting simultaneous Link 16, SATCOM and UHF LOS.</p>
+          </div>
+          <div class="trend-slide min-w-full sm:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] bg-card border border-white/5 rounded-2xl p-6">
+            <div class="text-xs font-semibold text-green-400 uppercase tracking-wider mb-3">Mechanics</div>
+            <h3 class="text-lg font-semibold mb-2">Ruggedised Cooling Systems</h3>
+            <p class="text-gray-400 text-sm">Advanced heat-pipe and liquid-cooling solutions keep high-power JTIDS/MIDS terminals operational in extreme environments.</p>
+          </div>
+          <div class="trend-slide min-w-full sm:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] bg-card border border-white/5 rounded-2xl p-6">
+            <div class="text-xs font-semibold text-primary uppercase tracking-wider mb-3">ICT</div>
+            <h3 class="text-lg font-semibold mb-2">AI-Assisted Network Management</h3>
+            <p class="text-gray-400 text-sm">Machine-learning tools now assist operators in predicting congestion and optimising time-slot allocation in Link 16 networks.</p>
+          </div>
+          <div class="trend-slide min-w-full sm:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] bg-card border border-white/5 rounded-2xl p-6">
+            <div class="text-xs font-semibold text-accent uppercase tracking-wider mb-3">Electronics</div>
+            <h3 class="text-lg font-semibold mb-2">Next-Gen Crypto Modules</h3>
+            <p class="text-gray-400 text-sm">Programmable crypto devices with faster key loading and multi-level security are becoming standard for modern COMSEC.</p>
+          </div>
+          <div class="trend-slide min-w-full sm:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] bg-card border border-white/5 rounded-2xl p-6">
+            <div class="text-xs font-semibold text-green-400 uppercase tracking-wider mb-3">Mechanics</div>
+            <h3 class="text-lg font-semibold mb-2">Modular Integration Kits</h3>
+            <p class="text-gray-400 text-sm">Quick-swap mechanical and electrical interface kits allow rapid installation of datalink terminals across platforms.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center gap-2 mt-8" id="trend-dots"></div>
+    </div>
+  </section>
+
+  <!-- Our Field Engineers -->
+  <section class="py-20 relative overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="{{ '/assets/images/aircraft-hero.jpg' | relative_url }}" alt="" loading="lazy" class="w-full h-full object-cover opacity-10" />
+      <div class="absolute inset-0 bg-gradient-to-b from-dark via-dark/95 to-dark"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">Our Engineers, On Platform</h2>
+        <p class="text-gray-400 max-w-2xl mx-auto">Trained datalink operators and technicians, working directly on the aircraft, vessels and ground systems they support.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="relative rounded-2xl overflow-hidden group h-80">
+          <img src="{{ '/assets/images/field-engineer.jpg' | relative_url }}" alt="Field engineer in full duty gear working flightline equipment" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/20 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-5">
+            <span class="inline-block text-xs font-semibold text-primary bg-sky-950/80 px-2.5 py-1 rounded-full mb-2 backdrop-blur">FLIGHTLINE</span>
+            <h3 class="font-semibold">Aircraft Systems Support</h3>
+          </div>
+        </div>
+
+        <div class="relative rounded-2xl overflow-hidden group h-80">
+          <img src="{{ '/assets/images/naval.jpg' | relative_url }}" alt="Naval vessel supported by datalink technicians" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/20 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-5">
+            <span class="inline-block text-xs font-semibold text-accent bg-cyan-950/80 px-2.5 py-1 rounded-full mb-2 backdrop-blur">NAVAL</span>
+            <h3 class="font-semibold">Shipboard Communications</h3>
+          </div>
+        </div>
+
+        <div class="relative rounded-2xl overflow-hidden group h-80">
+          <img src="{{ '/assets/images/uav.jpg' | relative_url }}" alt="UAV platform supported by datalink engineers" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/20 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-5">
+            <span class="inline-block text-xs font-semibold text-green-400 bg-green-950/80 px-2.5 py-1 rounded-full mb-2 backdrop-blur">UAV</span>
+            <h3 class="font-semibold">Unmanned Platform Links</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative rounded-3xl overflow-hidden">
+        <img src="{{ '/assets/images/naval.jpg' | relative_url }}" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover opacity-30" />
+        <div class="absolute inset-0 bg-gradient-to-r from-sky-950/95 to-dark/90"></div>
+        <div class="relative p-10 md:p-14 text-center">
+          <h2 class="text-3xl font-bold mb-4">Ready to Speak with Us?</h2>
+          <p class="text-gray-300 mb-8 max-w-xl mx-auto">One click connects you directly via WhatsApp. Schedule a free briefing or technical consultation with the team in charge.</p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="https://wa.me/2348119714460?text=Hello%20DIPHIL%20WORLD%2C%20I%20would%20like%20to%20book%20a%20service%20/%20schedule%20a%20briefing." target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 bg-primary hover:bg-sky-500 text-white font-semibold px-7 py-3.5 rounded-xl transition shadow-lg shadow-sky-500/30">
+              <i class="fab fa-whatsapp text-lg"></i>
+              Book via WhatsApp
+            </a>
+            <a href="https://wa.me/2348119714460" target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 text-white font-semibold px-7 py-3.5 rounded-xl transition">
+              <i class="fas fa-phone-alt"></i>
+              Start WhatsApp Call
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
+            <i class="fas fa-satellite-dish text-white text-xs"></i>
+          </div>
+          <span class="font-bold">DIPHIL <span class="text-primary">WORLD</span></span>
+        </div>
+        <div class="flex gap-6 text-sm text-gray-400">
+          <a href="{{ '/' | relative_url }}" class="hover:text-primary">Home</a>
+          <a href="{{ '/explore.html' | relative_url }}" class="hover:text-primary">Explore</a>
+          <a href="{{ '/profile.html' | relative_url }}" class="hover:text-primary">Profile</a>
+          <a href="{{ '/history.html' | relative_url }}" class="hover:text-primary">History</a>
+        </div>
+        <p class="text-sm text-gray-500">© 2026 DIPHIL WORLD. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AI Chat Bubble -->
+  <div id="chat-bubble" class="fixed bottom-6 right-6 z-50">
+    <button id="chat-toggle" class="group relative w-16 h-16 rounded-2xl bg-gradient-to-br from-sky-500 via-primary to-cyan-400 text-white shadow-2xl shadow-sky-500/50 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-sky-400/60 hover:rotate-3">
+      <span class="absolute -top-1 -right-1 w-4 h-4 bg-green-400 rounded-full border-2 border-dark animate-pulse"></span>
+      <i class="fas fa-headset text-2xl group-hover:scale-110 transition"></i>
+    </button>
+    <div id="chat-panel" class="hidden absolute bottom-16 right-0 w-80 sm:w-96 bg-card border border-white/10 rounded-2xl shadow-2xl overflow-hidden">
+      <div class="bg-gradient-to-r from-primary to-sky-600 px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <i class="fas fa-headset"></i>
+          <span class="font-semibold text-sm">Diphil Assistant</span>
+        </div>
+        <button id="chat-close" class="text-white/80 hover:text-white"><i class="fas fa-times"></i></button>
+      </div>
+      <div id="chat-messages" class="h-72 overflow-y-auto p-4 space-y-3 text-sm">
+        <div class="bg-surface rounded-xl rounded-tl-none p-3 max-w-[85%]">
+          Hello! I'm Diphil Assistant. How can I help you today with datalink services, booking, or technical questions?
+        </div>
+      </div>
+      <div class="p-3 border-t border-white/5 flex gap-2">
+        <input id="chat-input" type="text" placeholder="Type your message..." class="flex-1 bg-surface border border-white/10 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-primary" />
+        <button id="chat-send" class="bg-primary hover:bg-sky-500 text-white px-3 py-2 rounded-lg"><i class="fas fa-paper-plane"></i></button>
+      </div>
+      <div class="px-3 pb-3">
+        <a href="https://wa.me/2348119714460?text=Hello%20DIPHIL%20WORLD%2C%20I%20need%20support." target="_blank" rel="noopener"
+           class="flex items-center justify-center gap-2 w-full bg-green-600/20 hover:bg-green-600/30 text-green-400 text-xs font-medium py-2 rounded-lg transition">
+          <i class="fab fa-whatsapp"></i> Prefer WhatsApp? Chat with a human
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="{{ \'/assets/js/main.js\' | relative_url }}"></script>
+  <script src="{{ \'/assets/js/chat.js\' | relative_url }}"></script>
+</body>
+</html>

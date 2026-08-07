@@ -1,0 +1,286 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>History & Transactions | DIPHIL WORLD</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0ea5e9',
+            accent: '#22d3ee',
+            dark: '#0b1120',
+            card: '#111827',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-dark text-gray-100 font-sans antialiased">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-dark/90 backdrop-blur-md border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="{{ '/' | relative_url }}" class="flex items-center gap-2">
+          <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
+            <i class="fas fa-satellite-dish text-white text-sm"></i>
+          </div>
+          <span class="font-bold text-lg tracking-tight">DIPHIL <span class="text-primary">WORLD</span></span>
+        </a>
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="{{ '/' | relative_url }}" class="hover:text-primary transition">Home</a>
+          <a href="{{ '/explore.html' | relative_url }}" class="hover:text-primary transition">Explore</a>
+          <a href="{{ '/profile.html' | relative_url }}" class="hover:text-primary transition">Profile</a>
+          <a href="{{ '/history.html' | relative_url }}" class="text-primary">History</a>
+          <a href="https://wa.me/2348119714460?text=Hello%20DIPHIL%20WORLD%2C%20I%20would%20like%20to%20book%20a%20service%20/%20schedule%20a%20briefing." class="bg-primary hover:bg-sky-600 text-white px-4 py-2 rounded-lg transition font-semibold">Book a Call</a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-card border-t border-gray-800">
+      <div class="px-4 py-3 space-y-2">
+        <a href="{{ '/' | relative_url }}" class="block py-2 hover:text-primary">Home</a>
+        <a href="{{ '/explore.html' | relative_url }}" class="block py-2 hover:text-primary">Explore</a>
+        <a href="{{ '/profile.html' | relative_url }}" class="block py-2 hover:text-primary">Profile</a>
+        <a href="{{ '/history.html' | relative_url }}" class="block py-2 text-primary">History</a>
+        <a href="https://wa.me/2348119714460?text=Hello%20DIPHIL%20WORLD%2C%20I%20would%20like%20to%20book%20a%20service%20/%20schedule%20a%20briefing." class="block py-2 bg-primary text-white text-center rounded-lg font-semibold">Book a Call</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="pt-28 pb-10">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl sm:text-4xl font-bold mb-2">Service History</h1>
+      <p class="text-gray-400">Recent engagements, briefings and technical support activities.</p>
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <section class="pb-6">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap gap-2">
+        <button class="filter-btn active px-4 py-1.5 rounded-full text-sm font-medium bg-primary text-white" data-filter="all">All</button>
+        <button class="filter-btn px-4 py-1.5 rounded-full text-sm font-medium bg-card border border-gray-700 text-gray-300 hover:border-primary" data-filter="briefing">Briefings</button>
+        <button class="filter-btn px-4 py-1.5 rounded-full text-sm font-medium bg-card border border-gray-700 text-gray-300 hover:border-primary" data-filter="support">Support</button>
+        <button class="filter-btn px-4 py-1.5 rounded-full text-sm font-medium bg-card border border-gray-700 text-gray-300 hover:border-primary" data-filter="maintenance">Maintenance</button>
+        <button class="filter-btn px-4 py-1.5 rounded-full text-sm font-medium bg-card border border-gray-700 text-gray-300 hover:border-primary" data-filter="training">Training</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- History List -->
+  <section class="pb-20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="space-y-4" id="history-list">
+
+        <!-- Item 1 -->
+        <div class="history-item bg-card border border-gray-800 rounded-xl p-5 hover:border-gray-700 transition" data-type="briefing">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex gap-4">
+              <div class="w-11 h-11 rounded-xl bg-sky-900/50 flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-calendar-check text-primary"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold">Technical Briefing – Link 16 Network Design</h3>
+                <p class="text-sm text-gray-400 mt-0.5">Client: Regional Aerospace Unit · 28 Jul 2026</p>
+              </div>
+            </div>
+            <span class="inline-flex items-center gap-1.5 text-xs font-medium text-green-400 bg-green-900/30 px-2.5 py-1 rounded-full self-start sm:self-center">
+              <span class="w-1.5 h-1.5 bg-green-400 rounded-full"></span> Completed
+            </span>
+          </div>
+          <p class="text-sm text-gray-400 mt-3 ml-0 sm:ml-15">Initial consultation and network architecture review for multi-platform Link 16 integration.</p>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="history-item bg-card border border-gray-800 rounded-xl p-5 hover:border-gray-700 transition" data-type="support">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex gap-4">
+              <div class="w-11 h-11 rounded-xl bg-sky-900/50 flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-headset text-primary"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold">Emergency Fault Diagnosis – HF Link 11</h3>
+                <p class="text-sm text-gray-400 mt-0.5">Client: Maritime Patrol Squadron · 19 Jul 2026</p>
+              </div>
+            </div>
+            <span class="inline-flex items-center gap-1.5 text-xs font-medium text-green-400 bg-green-900/30 px-2.5 py-1 rounded-full self-start sm:self-center">
+              <span class="w-1.5 h-1.5 bg-green-400 rounded-full"></span> Resolved
+            </span>
+          </div>
+          <p class="text-sm text-gray-400 mt-3">Remote and on-site support to restore Link 11 HF connectivity after crypto desync. Link restored in under 40 minutes.</p>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="history-item bg-card border border-gray-800 rounded-xl p-5 hover:border-gray-700 transition" data-type="maintenance">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex gap-4">
+              <div class="w-11 h-11 rounded-xl bg-sky-900/50 flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-tools text-primary"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold">Scheduled Maintenance – MIDS Terminals</h3>
+                <p class="text-sm text-gray-400 mt-0.5">Client: Joint Training Centre · 05 Jul 2026</p>
+              </div>
+            </div>
+            <span class="inline-flex items-center gap-1.5 text-xs font-medium text-green-400 bg-green-900/30 px-2.5 py-1 rounded-full self-start sm:self-center">
+              <span class="w-1.5 h-1.5 bg-green-400 rounded-full"></span> Completed
+            </span>
+          </div>
+          <p class="text-sm text-gray-400 mt-3">Preventive maintenance, firmware verification and performance testing of six MIDS LVT terminals.</p>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="history-item bg-card border border-gray-800 rounded-xl p-5 hover:border-gray-700 transition" data-type="training">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex gap-4">
+              <div class="w-11 h-11 rounded-xl bg-sky-900/50 flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-chalkboard-teacher text-primary"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold">Operator Training – COMSEC Procedures</h3>
+                <p class="text-sm text-gray-400 mt-0.5">Client: National Defence Academy · 22 Jun 2026</p>
+              </div>
+            </div>
+            <span class="inline-flex items-center gap-1.5 text-xs font-medium text-green-400 bg-green-900/30 px-2.5 py-1 rounded-full self-start sm:self-center">
+              <span class="w-1.5 h-1.5 bg-green-400 rounded-full"></span> Completed
+            </span>
+          </div>
+          <p class="text-sm text-gray-400 mt-3">Two-day practical course covering key handling, zeroisation, and secure network entry procedures.</p>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="history-item bg-card border border-gray-800 rounded-xl p-5 hover:border-gray-700 transition" data-type="briefing">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex gap-4">
+              <div class="w-11 h-11 rounded-xl bg-sky-900/50 flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-calendar-check text-primary"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold">Capability Briefing – UAV Datalink Integration</h3>
+                <p class="text-sm text-gray-400 mt-0.5">Client: UAV Development Team · 11 Jun 2026</p>
+              </div>
+            </div>
+            <span class="inline-flex items-center gap-1.5 text-xs font-medium text-green-400 bg-green-900/30 px-2.5 py-1 rounded-full self-start sm:self-center">
+              <span class="w-1.5 h-1.5 bg-green-400 rounded-full"></span> Completed
+            </span>
+          </div>
+          <p class="text-sm text-gray-400 mt-3">Technical presentation on integrating tactical data links into medium-altitude UAV platforms.</p>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="history-item bg-card border border-gray-800 rounded-xl p-5 hover:border-gray-700 transition" data-type="support">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex gap-4">
+              <div class="w-11 h-11 rounded-xl bg-sky-900/50 flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-headset text-primary"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold">Network Monitoring Support – Joint Exercise</h3>
+                <p class="text-sm text-gray-400 mt-0.5">Client: Combined Task Force · 28 May 2026</p>
+              </div>
+            </div>
+            <span class="inline-flex items-center gap-1.5 text-xs font-medium text-green-400 bg-green-900/30 px-2.5 py-1 rounded-full self-start sm:self-center">
+              <span class="w-1.5 h-1.5 bg-green-400 rounded-full"></span> Completed
+            </span>
+          </div>
+          <p class="text-sm text-gray-400 mt-3">Live network monitoring and real-time troubleshooting support during a multi-national joint exercise.</p>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="history-item bg-card border border-gray-800 rounded-xl p-5 hover:border-gray-700 transition" data-type="maintenance">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex gap-4">
+              <div class="w-11 h-11 rounded-xl bg-sky-900/50 flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-tools text-primary"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold">Antenna System Overhaul</h3>
+                <p class="text-sm text-gray-400 mt-0.5">Client: Coastal Surveillance Station · 14 May 2026</p>
+              </div>
+            </div>
+            <span class="inline-flex items-center gap-1.5 text-xs font-medium text-green-400 bg-green-900/30 px-2.5 py-1 rounded-full self-start sm:self-center">
+              <span class="w-1.5 h-1.5 bg-green-400 rounded-full"></span> Completed
+            </span>
+          </div>
+          <p class="text-sm text-gray-400 mt-3">Inspection, repair and re-alignment of multi-band datalink antennas. Full system re-validation performed.</p>
+        </div>
+
+      </div>
+
+      <p class="text-center text-sm text-gray-500 mt-10">This is a sample history for demonstration. Your actual engagement records will appear here after you work with us.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="pb-20">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <a href="https://wa.me/2348119714460?text=Hello%20DIPHIL%20WORLD%2C%20I%20would%20like%20to%20book%20a%20service%20/%20schedule%20a%20briefing." class="inline-flex items-center gap-2 bg-primary hover:bg-sky-600 text-white font-semibold px-6 py-3.5 rounded-xl transition">
+        <i class="fas fa-calendar-check"></i>
+        Book Your Next Session
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-800 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
+            <i class="fas fa-satellite-dish text-white text-xs"></i>
+          </div>
+          <span class="font-bold">DIPHIL <span class="text-primary">WORLD</span> Systems</span>
+        </div>
+        <div class="flex gap-6 text-sm text-gray-400">
+          <a href="{{ '/' | relative_url }}" class="hover:text-primary">Home</a>
+          <a href="{{ '/explore.html' | relative_url }}" class="hover:text-primary">Explore</a>
+          <a href="{{ '/profile.html' | relative_url }}" class="hover:text-primary">Profile</a>
+          <a href="{{ '/history.html' | relative_url }}" class="hover:text-primary">History</a>
+        </div>
+        <p class="text-sm text-gray-500">© 2026 DIPHIL WORLD. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{ \'/assets/js/main.js\' | relative_url }}"></script>
+  <script src="{{ \'/assets/js/history.js\' | relative_url }}"></script>
+  <!-- AI Chat Bubble -->
+  <div id="chat-bubble" class="fixed bottom-6 right-6 z-50">
+    <button id="chat-toggle" class="group relative w-16 h-16 rounded-2xl bg-gradient-to-br from-sky-500 via-primary to-cyan-400 text-white shadow-2xl shadow-sky-500/50 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-sky-400/60 hover:rotate-3">
+      <span class="absolute -top-1 -right-1 w-4 h-4 bg-green-400 rounded-full border-2 border-dark animate-pulse"></span>
+      <i class="fas fa-headset text-2xl group-hover:scale-110 transition"></i>
+    </button>
+    <div id="chat-panel" class="hidden absolute bottom-16 right-0 w-80 sm:w-96 bg-card border border-white/10 rounded-2xl shadow-2xl overflow-hidden">
+      <div class="bg-gradient-to-r from-primary to-sky-600 px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center gap-2"><i class="fas fa-headset"></i><span class="font-semibold text-sm">Diphil Assistant</span></div>
+        <button id="chat-close" class="text-white/80 hover:text-white"><i class="fas fa-times"></i></button>
+      </div>
+      <div id="chat-messages" class="h-72 overflow-y-auto p-4 space-y-3 text-sm">
+        <div class="bg-surface rounded-xl rounded-tl-none p-3 max-w-[85%]">Hello! I'm Diphil Assistant. How can I help you today?</div>
+      </div>
+      <div class="p-3 border-t border-white/5 flex gap-2">
+        <input id="chat-input" type="text" placeholder="Type your message..." class="flex-1 bg-surface border border-white/10 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-primary" />
+        <button id="chat-send" class="bg-primary hover:bg-sky-500 text-white px-3 py-2 rounded-lg"><i class="fas fa-paper-plane"></i></button>
+      </div>
+      <div class="px-3 pb-3">
+        <a href="https://wa.me/2348119714460?text=Hello%20DIPHIL%20WORLD%2C%20I%20need%20support." target="_blank" rel="noopener" class="flex items-center justify-center gap-2 w-full bg-green-600/20 hover:bg-green-600/30 text-green-400 text-xs font-medium py-2 rounded-lg transition"><i class="fab fa-whatsapp"></i> Prefer WhatsApp? Chat with a human</a>
+      </div>
+    </div>
+  </div>
+  <script src="{{ \'/assets/js/chat.js\' | relative_url }}"></script>
+</body>
+</html>
